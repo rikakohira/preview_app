@@ -1,10 +1,11 @@
+// DOMツリーの構築が完了したとき
 document.addEventListener('DOMContentLoaded', function(){
   // フォームを取得
   const postForm = document.getElementById('new_post');
   // プレビューを取得
   const previewList = document.getElementById('previews');
-  if (!postForm) return null;
-  console.log("preview.jsが読み込まれました");
+  //  if (!postForm) return null;
+  // console.log("preview.jsが読み込まれました");
 
   // input要素を取得
   const fileField = document.querySelector('input[type="file"][name="post[image]"]');
