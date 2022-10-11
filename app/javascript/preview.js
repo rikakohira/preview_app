@@ -10,6 +10,11 @@ document.addEventListener('DOMContentLoaded', function(){
   const fileField = document.querySelector('input[type="file"][name="post[image]"]');
   // ファイル選択時にイベント発火
   fileField.addEventListener('change', function(e){
+    // プレビューが存在する場合は削除
+    const alreadyPreview = document.querySelector('.preview');
+    if (alreadyPreview) {
+      alreadyPreview.remove();
+    };
     const file = e.target.files[0];
     // 画像情報を渡してURLを生成
     const blob = window.URL.createObjectURL(file);
