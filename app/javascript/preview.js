@@ -29,5 +29,12 @@ document.addEventListener('DOMContentLoaded', function(){
     // 生成したHTMLの要素をブラウザに表示させる
     previewWrapper.appendChild(previewImage);
     previewList.appendChild(previewWrapper);
+
+     // ファイルを選択を生成・表示
+     const newFileField = document.createElement('input');
+     newFileField.setAttribute('type', 'file');
+     newFileField.setAttribute('name', 'post[images][]');
+     const fileFieldsArea = document.querySelector('.click-upload');
+     fileFieldsArea.appendChild(newFileField);
   });
 });
