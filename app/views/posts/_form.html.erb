@@ -6,7 +6,7 @@
   <div class="image-field">
     <div id="previews"></div>
     <div class="click-upload">
-      <%= f.file_field :image %>
+      <%= f.file_field :images, name: 'post[images][]', data: {index: 0} %>
     </div>
   </div>
   <div class="submit-btn">
