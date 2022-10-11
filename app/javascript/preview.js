@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
   // console.log("preview.jsが読み込まれました");
 
   // input要素を取得
-  const fileField = document.querySelector('input[type="file"][name="post[image]"]');
+  const fileField = document.querySelector('input[type="file"][name="post[images][]"]');
   // ファイル選択時にイベント発火
   fileField.addEventListener('change', function(e){
     // プレビューが存在する場合は削除
